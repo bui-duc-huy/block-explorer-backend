@@ -1,7 +1,8 @@
 require('dotenv').config()
 
+
 //Application
-const PORT = process.env.PORT || 5000
+const PORT = +process.env.PORT || 5000
 
 //Database
 const DATABASE_NAME = process.env.DATABASE_NAME || 'Code-base-restful'
@@ -13,7 +14,12 @@ const PRIVATE_KEY = process.env.PRIVATE_KEY || 'duchuy'
 //bycrypt
 const SALT = process.env.SALT || 10
 
+//blockchain
+const EOS_API = process.env.EOS_API || 'http://127.0.0.1:8887/v1'
+const EOS_HISTORY_API = process.env.EOS_HISTORY_API
+
 module.exports = {
+    EOS_API,
     PORT,
     DATABASE_NAME,
     MONGO_URL,

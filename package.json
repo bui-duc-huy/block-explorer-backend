@@ -1,5 +1,5 @@
 {
-	"name": "code-base-nodejs-restful",
+	"name": "block-explorer-backend",
 	"version": "1.0.0",
 	"description": "Code base nodejs restful",
 	"main": "src/index.js",
@@ -7,6 +7,7 @@
 		"start": "nodemon src/index.js"
 	},
 	"dependencies": {
+		"@types/node": "^14.11.2",
 		"bcrypt": "5.0.0",
 		"body-parser": "1.19.0",
 		"compression": "1.7.4",
@@ -15,6 +16,7 @@
 		"express": "4.17.1",
 		"express-rate-limit": "5.1.3",
 		"express-validator": "6.6.0",
+		"fs": "^0.0.1-security",
 		"helmet": "3.23.3",
 		"jsonwebtoken": "^8.5.1",
 		"mongoose": "5.9.21",
